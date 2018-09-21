@@ -238,23 +238,7 @@ setMethod("summary", signature(object="compareClusterResult"),
 ##' @param title figure title
 ##' @importFrom enrichplot dotplot
 ##' @exportMethod dotplot
-setMethod("dotplot", signature(object="compareClusterResult"),
-          function(object,
-                   x = ~Cluster,
-                   color ="p.adjust",
-                   showCategory=5,
-                   split=NULL,
-                   font.size=12,
-                   title="",
-                   by="geneRatio",
-                   includeAll=TRUE
-                   ) {
-              dotplot.compareClusterResult(object, x=x, colorBy = color,
-                                           showCategory = showCategory, by = by,
-                                           includeAll = includeAll,
-                                           split=split, font.size = font.size,
-                                           title = title)
-          })
+
 
 
 barplot.compareClusterResult <- function(height, color="p.adjust", showCategory=5,
