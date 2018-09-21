@@ -16,7 +16,6 @@ Depends:
 Imports:
     AnnotationDbi,
     DOSE (>= 3.5.1),
-    enrichplot (>= 0.99.7),
     ggplot2,
     GO.db,
     GOSemSim,
